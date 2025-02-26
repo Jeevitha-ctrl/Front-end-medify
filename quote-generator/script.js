@@ -20,7 +20,7 @@ async function fetchQuote() {
         console.log(data)
 
         document.getElementById('quote').textContent = "${data.content}";
-        document.getElementById('author').textContent = "~${data.author}~";
+        document.getElementById('author').textContent = "${data.author}";
     } catch (error) {
         console.error('Error fetching quote:', error);
 
